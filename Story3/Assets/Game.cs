@@ -12,7 +12,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        textcompontent.text = ("welcome to the Game");
     }
 
     // Update is called once per frame
@@ -20,6 +20,5 @@ public class Game : MonoBehaviour
     {
 
 
-       
     }
 }
