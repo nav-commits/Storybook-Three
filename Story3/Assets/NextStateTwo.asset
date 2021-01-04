@@ -15,3 +15,4 @@ MonoBehaviour:
   storytext: This is scene two, hello this is going to be an amazing game.
   nextstates:
   - {fileID: 11400000, guid: 24752fca1e03a4c4d8e7421a5f0ead4c, type: 2}
+  - {fileID: 11400000, guid: cae83ea09ff944bf4bae4f4e564ec383, type: 2}

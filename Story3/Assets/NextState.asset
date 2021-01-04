@@ -15,3 +15,4 @@ MonoBehaviour:
   storytext: I am going to the next game scene.
   nextstates:
   - {fileID: 11400000, guid: 334c81b9a22b44d6088dba6d808e4b2e, type: 2}
+  - {fileID: 11400000, guid: cae83ea09ff944bf4bae4f4e564ec383, type: 2}
