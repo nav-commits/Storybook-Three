@@ -9,22 +9,38 @@ public class Game : MonoBehaviour
 
   [SerializeField] Text textcompontent;
   [SerializeField] Text textcompontenttwo;
+  [SerializeField] State startingState;
 
+    State state;
+
+    int[] data = { 1, 2, 3, 4, 5, 6 };
+
+    string[] names = { "bob", "johnny","mark"};
+    
     // Start is called before the first frame update
     void Start()
     {
-        if (textcompontent == false)
+        state = startingState;
+
+        if (textcompontent == true)
         {
-            textcompontent.text = ("Game will process");
+            textcompontent.text = startingState.Storystate();
 
         }
 
-        else
+        if(textcompontenttwo)
         {
-            textcompontenttwo.text = ("Game start");
+            foreach (string i in names)
+            {
+                textcompontenttwo.text = i.ToString();
+            }
+
+
         }
-        
+
+        print(data);
     }
+
 
     // Update is called once per frame
     void Update()
