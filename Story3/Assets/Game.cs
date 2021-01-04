@@ -41,7 +41,7 @@ public class Game : MonoBehaviour
 
         if(textcompontent == true)
         {
-            textcompontenttwo.text = (" welcome to the game");
+            textcompontenttwo.text = ("GAME HAS STARTED");
         }
 
         print(data);
@@ -60,22 +60,24 @@ public class Game : MonoBehaviour
     {
         var nextstates = state.GetNextStates();
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+
+        if (Input.GetMouseButtonDown(0))
         {
             state = nextstates[0];
         }
 
 
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetMouseButtonDown(1))
         {
             state = nextstates[1];
         }
 
 
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Input.GetMouseButtonDown(2))
         {
             state = nextstates[2];
         }
+
 
         textcompontent.text = state.Storystate();
     }

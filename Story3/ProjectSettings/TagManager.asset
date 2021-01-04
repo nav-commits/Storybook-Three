@@ -44,6 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Text
+    uniqueID: 1025530061
+    locked: 0
   - name: Character
     uniqueID: 2158101799
+    locked: 0
+  - name: Charactertwo
+    uniqueID: 1906778661
+    locked: 0
+  - name: Home
+    uniqueID: 1409969639
     locked: 0
