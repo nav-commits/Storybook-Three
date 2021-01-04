@@ -77,6 +77,8 @@ public class Game : MonoBehaviour
             state = nextstates[2];
         }
 
-        textcompontent.text = startingState.Storystate();
+        textcompontent.text = state.Storystate();
     }
 }
+
+
