@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,7 +29,7 @@ public class Game : MonoBehaviour
 
         }
 
-        if(textcompontenttwo)
+        if(textcompontenttwo == false)
         {
             foreach (string i in names)
             {
@@ -38,6 +39,11 @@ public class Game : MonoBehaviour
 
         }
 
+        if(textcompontent == true)
+        {
+            textcompontenttwo.text = (" welcome to the game");
+        }
+
         print(data);
     }
 
@@ -45,8 +51,32 @@ public class Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        ManageState();
+
+    }
+
+    private void ManageState()
+    {
+        var nextstates = state.GetNextStates();
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            state = nextstates[0];
+        }
 
 
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            state = nextstates[1];
+        }
+
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            state = nextstates[2];
+        }
+
+        textcompontent.text = startingState.Storystate();
     }
 }
