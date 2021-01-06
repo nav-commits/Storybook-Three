@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 
 public class Game : MonoBehaviour
+
 {
 
   [SerializeField] Text textcompontent;
@@ -61,25 +62,40 @@ public class Game : MonoBehaviour
         var nextstates = state.GetNextStates();
 
 
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    state = nextstates[0];
+        //}
+
+
+        //else if (Input.GetMouseButtonDown(1))
+        //{
+        //    state = nextstates[1];
+        //}
+
+
+        //else if (Input.GetMouseButtonDown(2))
+        //{
+        //    state = nextstates[2];
+        //}
+
+
+
         if (Input.GetMouseButtonDown(0))
         {
-            state = nextstates[0];
+           
+            for (int index = 0; index < nextstates.Length; index++)
+            {
+                state = nextstates[0];
+                state = nextstates[1];
+                Debug.Log(state);
+                Debug.Log(nextstates.Length);
+            }
+
         }
 
-
-        else if (Input.GetMouseButtonDown(1))
-        {
-            state = nextstates[1];
-        }
-
-
-        else if (Input.GetMouseButtonDown(2))
-        {
-            state = nextstates[2];
-        }
-
-
-        textcompontent.text = state.Storystate();
+         textcompontent.text = state.Storystate();
+       
     }
 }
 
