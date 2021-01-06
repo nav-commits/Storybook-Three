@@ -14,11 +14,12 @@ public class Game : MonoBehaviour
   [SerializeField] State startingState;
 
     State state;
+    string[] names = { "bob", "johnny", "mark" };
 
-    int[] data = { 1, 2, 3, 4, 5, 6 };
 
-    string[] names = { "bob", "johnny","mark"};
-    
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +46,7 @@ public class Game : MonoBehaviour
             textcompontenttwo.text = ("GAME HAS STARTED");
         }
 
-        print(data);
+        
     }
 
 
