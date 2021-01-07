@@ -44,6 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Image
+    uniqueID: 3924843359
+    locked: 0
   - name: Text
     uniqueID: 1025530061
     locked: 0
@@ -58,4 +61,7 @@ TagManager:
     locked: 0
   - name: Home
     uniqueID: 1409969639
+    locked: 0
+  - name: player
+    uniqueID: 241190107
     locked: 0
