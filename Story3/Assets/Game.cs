@@ -18,8 +18,6 @@ public class Game : MonoBehaviour
 
 
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -84,13 +82,13 @@ public class Game : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-           
+            state = nextstates[0];
+
             for (int index = 0; index < nextstates.Length; index++)
             {
+                
                 state = nextstates[0];
-                state = nextstates[1];
-                Debug.Log(state);
-                Debug.Log(nextstates.Length);
+
             }
 
         }

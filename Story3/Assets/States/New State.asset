@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6a03c3bd5064fe5a3628e98d4a57f3, type: 3}
   m_Name: New State
   m_EditorClassIdentifier: 
-  storytext: Welcome to the Game, you will have a blast its going to be so much fun.
+  storytext: State One
   nextstates:
   - {fileID: 11400000, guid: 24752fca1e03a4c4d8e7421a5f0ead4c, type: 2}
   - {fileID: 11400000, guid: 334c81b9a22b44d6088dba6d808e4b2e, type: 2}
+  - {fileID: 11400000, guid: 17d9e619b656042ec9d82bddb20cf951, type: 2}
+  - {fileID: 11400000, guid: 962210834a9e54644815c2d0d7cacd28, type: 2}
+  - {fileID: 11400000, guid: 8c7cae8c21a8d48ceae3ef872d6173cb, type: 2}
