@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f6a03c3bd5064fe5a3628e98d4a57f3, type: 3}
-  m_Name: StateSeven
+  m_Name: State eight
   m_EditorClassIdentifier: 
-  storytext: State 6
+  storytext: Welcome to the last state.
   nextstates:
-  - {fileID: 11400000, guid: 752618281b212486c951c1a14ea68144, type: 2}
+  - {fileID: 11400000, guid: cae83ea09ff944bf4bae4f4e564ec383, type: 2}

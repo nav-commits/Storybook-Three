@@ -13,9 +13,7 @@ public class Game : MonoBehaviour
   [SerializeField] Text textcompontenttwo;
   [SerializeField] State startingState;
 
-    State state;
-    string[] names = { "bob", "johnny", "mark" };
-
+   State state;
 
 
     // Start is called before the first frame update
@@ -29,15 +27,7 @@ public class Game : MonoBehaviour
 
         }
 
-        if(textcompontenttwo == false)
-        {
-            foreach (string i in names)
-            {
-                textcompontenttwo.text = i.ToString();
-            }
 
-
-        }
 
         if(textcompontent == true)
         {
@@ -61,29 +51,10 @@ public class Game : MonoBehaviour
         var nextstates = state.GetNextStates();
 
 
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    state = nextstates[0];
-        //}
-
-
-        //else if (Input.GetMouseButtonDown(1))
-        //{
-        //    state = nextstates[1];
-        //}
-
-
-        //else if (Input.GetMouseButtonDown(2))
-        //{
-        //    state = nextstates[2];
-        //}
-
-
         // for loop to increment state from 1 to 6 when clicked on text game object
 
         if (Input.GetMouseButtonDown(0))
         {
-            state = nextstates[0];
 
             for (int index = 0; index < nextstates.Length; index++)
             {
