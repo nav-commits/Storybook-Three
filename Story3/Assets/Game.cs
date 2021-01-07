@@ -79,6 +79,7 @@ public class Game : MonoBehaviour
         //}
 
 
+        // for loop to increment state from 1 to 6 when clicked on text game object
 
         if (Input.GetMouseButtonDown(0))
         {
